@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        .firstdiv {
+            background-color: #222e3d;
+            color: #c7c9ca;
+            list-style-type: none;
+            font-size: small;
+            font-weight: 500;
+
+        }
+
+        .firstdiv img {
+            width: 160px;
+            height: 65px;
+            margin-left: 20px;
+        }
+
+        .firstdiv li {
+            display: flex;
+        }
+
+        .firstdiv .firstlist {
+            margin-top: 5%;
+        }
+
+        .firstdiv li button {
+            margin-top: 20px;
+            margin-bottom: 0%;
+            border-radius: 21px;
+            background-color: #f90;
+            color: #001c0d;
+            border: none;
+            width: 75%;
+            height: 35px;
+            font-weight: 650;
+            padding: 5px;
+        }
+
+        .firstdiv .row .thirdlist ul {
+            font-size: medium;
+            padding-left: 25px;
+        }
+
+        .seconddiv {
+            display: flex;
+            margin-left: 5%;
+            padding: 10px;
+        }
+
+        #AWS-Free-Tire a {
+            font-weight: 700;
+            text-decoration: none;
+            color: #333;
+            margin-right: 30px;
+        }
+
+        #overview a {
+            text-decoration: none;
+            color: #333;
+            padding: 15px;
+            font-size: small;
+            font-weight: bold;
+        }
+
+        .thirddiv {
+            color: white;
+            text-align: center;
+            background-image: url(wave-img1.png);
+        }
+
+        .thirddiv button {
+            margin-top: 70px;
+            margin-bottom: 15%;
+            border-radius: 17px;
+            background-color: #f90;
+            color: #001c0d;
+            border: none;
+            width: 28%;
+            font-weight: 650;
+            padding: 5px;
+        }
+
+        .thirddiv a {
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .thirddiv p {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .thirddiv h1 {
+            padding: 14% 0% 0% 0%;
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .fourthdiv {
+            background-image: linear-gradient(to right, white, #fc93a1);
+            margin-left: 8%;
+            padding: 10px;
+        }
+
+        .fifthdiv {
+            text-align: center;
+            margin-top: 40px;
+            border: 1px solid #7d7c8d;
+            border-radius: 4px;
+            padding: 18px;
+            color: #333;
+            background-color: #fff;
+            margin-left: 118px;
+            margin-right: 100px;
+        }
+
+        #suga h5 {
+            color: #3872d3;
+        }
+
+        #suga p {
+            font-size: small;
+        }
+
+        #suga img {
+            width: 100%;
+        }
+
+        #suga {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .line {
+            box-shadow: 1px 0px #7d7c8d;
+        }
+
+        #sugan {
+            display: flex;
+            margin-bottom: 70px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #sugan img {
+            margin-bottom: 15px;
+        }
+
+        #sugan a {
+            text-decoration: none;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        #sugan p {
+            margin-top: 10px;
+        }
+
+        #searchbar {
+            width: 90%;
+            border: 0.5px solid #232f3e;
+            border-radius: 5px;
+            padding-left: 30px;
+
+        }
+
+        .search-container {
+            position: relative;
+
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 20%;
+        }
+
+        .sixthdiv {
+            background-color: #fafafa;
+            color: #232f3e;
+            margin-top: 40px;
+        }
+
+        .sixthdiv .sixthfirstdiv {
+            display: flex;
+        }
+
+        .sixthdiv .sixthfirstdiv .picrow {
+            padding: 15px;
+            margin-right: 33px;
+            border: 1px solid #ffff;
+            height: 90px;
+            border-radius: 5px;
+            box-shadow: 0 0 2px;
+        }
+
+        .sixthdiv .sixthfirstdiv .picrow.center>img {
+            margin-left: 45px;
+        }
+
+        .sixthdiv .sixthfirstdiv .picrow>img {
+            margin-left: 15px;
+        }
+
+        .sixthdiv .card h1 {
+            color: #0972d3;
+            margin-left: 10px;
+        }
+
+        .sixthdiv .card h4 {
+            color: #0972d3;
+            margin-left: 10px;
+        }
+
+        .sixthdiv .card h6 {
+            color: #0972d3;
+            margin-left: 10px;
+        }
+
+        .sixthdiv .card p {
+            color: #5f6b7a;
+            margin-left: 10px;
+        }
+
+        .sixthdiv .card small {
+            color: #5f6b7a;
+            font-weight: 700;
+        }
+
+        .sixthdiv .card {
+            margin-top: 20px;
+            margin-bottom: 28px;
+            height: 90%
+        }
+
+        .pagination {
+            margin-left: 35.5%;
+
+        }
+
+        .pagination a {
+            text-decoration: none;
+            padding: 5px 11px;
+            border: 1px solid #ccc;
+            margin: 0 4px;
+            color: black;
+        }
+
+        .pagination a.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+
+        #tier-offers {
+            font-size: small;
+            color: #7d7c8d;
+        }
+
+        .seventhdiv {
+            margin-top: 3%;
+        }
+
+        .seventhdiv h5 {
+            font-size: large;
+        }
+
+        .utubepic {
+            margin-left: 10%;
+        }
+
+        #card {
+            display: flex;
+        }
+
+        .card-body {
+            display: flex;
+        }
+
+        .eighthdiv {
+            background-color: #fafafa;
+            color: #232f3e;
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        .icon1 {
+            margin-left: 80%;
+        }
+
+        .icon2 {
+            margin-left: 81%;
+        }
+
+        .icon3 {
+            margin-left: 79.5%;
+        }
+
+        .icon4 {
+            margin-left: 78.5%;
+        }
+
+        .foot {
+            background-color: #232f3e;
+            color: white
+        }
+
+        table tr td {
+            padding-right: 26px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+        table tr td button {
+            border-radius: 17px;
+            background-color: #f90;
+            color: #001c0d;
+            border: none;
+            width: 100%;
+            font-weight: 650;
+            padding: 5px;
+        }
+
+        table {
+            margin-top: 20px;
+        }
+
+        .below-footer {
+            padding: 15px;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="firstdiv ">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <img src="aws-logo.png" alt="lodding" width="100" height="100">
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <li class="firstlist">
+                    <ul>Contact Us</ul>
+                    <ul>Support</ul>
+                    <ul>English</ul>
+                    <ul>My Account</ul>
+                    <ul>Sign In</ul>
+                </li>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <li>
+                    <button>Create Sign Up</button>
+                </li>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <li class="thirdlist">
+                    <ul>Products</ul>
+                    <ul>Solutions</ul>
+                    <ul>Pricing</ul>
+                    <ul>Documentation</ul>
+                    <ul>Learn</ul>
+                    <ul>Partner Network</ul>
+                    <ul>AWS Marketplace</ul>
+                    <ul>Customer Enablement</ul>
+                    <ul>Events</ul>
+                    <ul>Explore More</ul>
+                    <ul></ul>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="seconddiv">
+        <div id="AWS-Free-Tire">
+            <a href="">AWS Free Tire</a>
+        </div>
+        <div id="overview">
+            <a href="">Overview</a>
+            <a href="">Free Tire Categories</a>
+            <a href="">How to Create an Account</a>
+            <a href="">Featured Offers for Bussiness</a>
+            <a href="">FAQs</a>
+            <a href="">Tearms and Conditions</a>
+        </div>
+    </div>
+    <div class="thirddiv">
+        <h1>AWS Free Tire</h1>
+        <p>Gain free, hands-on experience with the AWS platform, products, and services</p>
+        <a href="">Learn more about AWS Free Tier </a><br>
+        <button>
+            Create a Free Account
+        </button>
+    </div>
+
+    <div class="fourthdiv">
+        <p><b>Startups may be eligible for AWS credits.</b>AWS Activate provides eligible startups with a host of
+            resources, including free AWS credits to spend on AWS services,<br>and AWS Support.&nbsp; &nbsp;<a
+                href="">Signup for Activate Today>></a></p>
+    </div>
+    <div class="fifthdiv">
+        <h2>Types Of Offers</h2>
+        <p>Explore more than 100 products and start building on AWS using the Free Tier. Three different types of free
+            offers are available<br>
+            depending on the product used. Click icon below to explore our offers.</p>
+        <div id="suga">
+            <div class="line">
+                <img src="img3.png">
+                <h5>Free trials</h5>
+                <p>Short-term free trial offers start from the date you<br> activate a particular service</p>
+            </div>
+            <div class="line">
+                <img src="img2.png">
+                <h5>12 months free</h5>
+                <p>Enjoy these offers for 12-months following your initial <br>sign-up date to AWS</p>
+            </div>
+            <div>
+                <img src="img1.png">
+                <h5>Always free</h5>
+                <p>These free tier offers do not expire and are available to <br>all AWS customers</p>
+            </div>
+        </div>
+    </div>
+    <div class="sixthdiv">
+        <div class="container">
+            <h3>Explore Top Product Categories</h3>
+
+            <div class="sixthfirstdiv">
+                <div class="picrow">
+                    <img src="a1.png">
+                    <p>Compute</p>
+                </div>&nbsp;&nbsp;
+                <div class="picrow">
+                    <img src="a2.png">
+                    <p>Database</p>
+                </div>&nbsp;&nbsp;
+                <div class="picrow">
+                    <img src="a3.png">
+                    <p>Storage</p>
+                </div>&nbsp;&nbsp;
+                <div class="picrow">
+                    <img src="a4.png">
+                    <p>Containers</p>
+                </div>&nbsp;&nbsp;
+                <div class="picrow center">
+                    <img src="a5.png">
+                    <p>Web & Mobile Apps</p>
+                </div>&nbsp;&nbsp;
+                <div class="picrow">
+                    <img src="a6.png">
+                    <p>Serverless</p>
+                </div>&nbsp;&nbsp;
+                <div class="picrow center">
+                    <img src="a7.png">
+                    <p>Machine Learning</p>
+                </div>&nbsp;
+            </div>
+            <br>
+            <h3>Free Tier details</h3>
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <p style="font-weight: 700;font-size: larger;">Filter by:</p>
+                    <a href="" style="text-decoration: none;">Clear all filters</a>
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-auto-close="outside">
+                            Team Tier
+                        </button>
+                        <hr>
+                        <form class="dropdown-menu p-4">
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck1">
+                                    <label class="form-check-label" for="dropdownCheck1">
+                                        Featured
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                    <label class="form-check-label" for="dropdownCheck2">
+                                        12 Months Free
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck3">
+                                    <label class="form-check-label" for="dropdownCheck3">
+                                        Always Free
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label class="form-check-label" for="dropdownCheck4">
+                                        Trials
+                                    </label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-auto-close="outside">
+                            Product Categories
+                        </button>
+                        <hr>
+                        <form class="dropdown-menu p-4">
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Analytics
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Application Integration
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Business Productivity
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Compute
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Containers
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Customer Engagement
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Database
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Developer Tools
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input"> End User Computing
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Front-End Web & Mobile
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Game Tech
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Internet of Things
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input"> Machine Learning
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input"> Management & Governance
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Media Services
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input"> Migration & Transfer
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Networking & Content Delivery
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Robotics
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Security, Identity, & Compliance
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input"> Serverless
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">Storage
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="search" placeholder="Search Free Tier Products" id="searchbar">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>COMPUTE</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon EC2</h4>
+                                <h1>750 Hours </h1>
+                                <p>per month</p>
+                                <p><small>Resizable compute capacity in the Cloud.</small></p>
+                                <p>750 hours per month of t4g.small instance dependent on region</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>STORAGE</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon S3</h4>
+                                <h1>5 GB </h1>
+                                <p>of standard storage</p>
+                                <p><small>Secure, durable, and scalable object storage infrastructure.</small></p>
+                                <p>5 GB of Standard Storage</p>
+                                <p>2,000 Put Requests</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>DATABASE</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon RDS</h4>
+                                <h1>750 Hours </h1>
+                                <p><small>Managed Relational Database Service for MySQL, PostgreSQL, MariaDB, or SQL
+                                        Server.</small></p>
+                                <p>750 Hours of Amazon RDS Single-AZ db.t2.micro, db.t3.micro, and db.t4g.micro
+                                    Instances usage.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>ANALYTICS NEW</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE</p>
+                                <h4>Amazon OpenSearch Service</h4>
+                                <h1>750 Hours </h1>
+                                <p>per month of a single-AZ t2.small.search or t3.small.search instance</p>
+                                <p><small>Managed service that makes it easy to perform interactive log analytics,
+                                        real-time application monitoring, website search, and more.</small></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>MOBILE</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon API Gateway</h4>
+                                <h1>1 Million </h1>
+                                <p>API Calls Received per month</p>
+                                <p><small>Publish, maintain, monitor, and secure APIs at any scale.</small></p>
+                                <p>1 Million API Calls Received per month</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>MACHINE LEARNING</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon Comprehend</h4>
+                                <h1>50 k</h1>
+                                <p><small>units of text (5M characters) for each API per month</small></p>
+                                <p>Continuously trained and fully managed natural language processing (NLP).</p>
+                                <p>50K units of text (5M characters) for each API per month</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>CUSTOMER ENGAGEMENT</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon Connect</h4>
+                                <h1>90 Minutes </h1>
+                                <p>per month of Amazon Connect usage</p>
+                                <p><small>Amazon Connect is a simple to use, cloud-based contact center that scales to
+                                        support any size business.</small></p>
+                                <p>90 minutes per month of Amazon Connect usage.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>STORAGE</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon EFS</h4>
+                                <h1>5 GB </h1>
+                                <p>of storage</p>
+                                <p><small>Simple, scalable, shared file storage service for Amazon EC2
+                                        instances.</small></p>
+                                <p>5 GB of Standard Storage</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <p><small>DATABASE</small></p>
+                                <hr>
+                                <p>Free Tier &nbsp;&nbsp;&nbsp;12 MONTHS FREE </p>
+                                <h4>Amazon Elastic Block Storage</h4>
+                                <h1>30 GB </h1>
+                                <p><small>any combination of General Purpose (SSD) or Magnetic</small></p>
+                                <p>Persistent, durable, low-latency block-level storage volumes for EC2 instances.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div id="tier-offers">
+                <p><b>12-Months Free:</b> These free tier offers are only available to new AWS customers, and are
+                    available for 12 months following your AWS sign-up date. When your 12 month free usage term
+                    expires
+                    or if your application use exceeds the tiers, you simply pay standard, pay-as-you-go service
+                    rates
+                    (see each service page for full pricing details). Restrictions apply; see offer terms for more
+                    details.</p>
+
+                <p><b>Always Free:</b> These free tier offers do not automatically expire at the end of your 12
+                    month
+                    AWS Free Tier term, but are available to both existing and new AWS customers indefinitely.</p>
+
+                <p><b>Trials:</b> These free tier offers are short term trial offers that start from the time of
+                    first
+                    usage begins. Once the trial period expires you simply pay standard, pay-as-you-go service rates
+                    (see each service page for full pricing details).</p>
+
+                <p>The Amazon AWS Free Tier applies to participating services across our <a href="">global
+                        regions.</a>Your free usage under the AWS Free Tier is calculated each month across all
+                    regions
+                    and automatically applied to your bill-free usage does not accumulate. The AWS Free Tier is not
+                    available in the <a href="">AWS GovCloud (US)</a> Regions* at this time.</p>
+
+                <p>*The Lambda free tier is available in the AWS GovCloud (US) Region. See Lambda <a href="">pricing</a>
+                    for more details.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class=" container seventhdiv">
+        <h3>Learn more about AWS Free Tier Products</h3>
+        <h5>Browse through our collection of videos to learn more about the AWS Free Tier, and how to setup and
+            monitor your account.</h5>
+        <div class="row">
+            <div class="col-sm-5 col-lg-5 col-md-5 col-xl-5">
+                <img src="utube1.png">
+                <p><small>How do I make sure that I'm not billed again while I'm using the AWS Free
+                        Tier?(3:07)</small>
+                </p>
+            </div>
+            <div class="col-sm-5 col-lg-5 col-md-5 col-xl-5 utubepic">
+                <img src="utube2.png">
+                <p><small>Cost Optimization: Stretching your runway to go further (57:46)</small></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-lg-5 col-md-5 col-xl-5">
+                <img src="utube3.png">
+                <p><small>How can I use AWS Budgets to track my spending and usage?(5:16)</small></p>
+            </div>
+            <div class="col-sm-5 col-lg-5 col-md-5 col-xl-5 utubepic">
+                <img src="utube4.png">
+                <p><small>An Introduction to AWS (10:36)</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="eighthdiv">
+        <div class="container">
+            <h3>
+                FAQs
+            </h3>
+            <p>Read through our FAQs learn more about the AWS Free Tier, and how to monitor your account.</p><br>
+
+            <p>General<i class="fa-solid fa-circle-plus icon1"></i></p><br>
+            <hr><br>
+            <p>Billing<i class="fa-solid fa-circle-plus icon2"></i></p><br>
+            <hr><br>
+            <p>Regions<i class="fa-solid fa-circle-plus icon3"></i></p><br>
+            <hr><br>
+            <p>Instances<i class="fa-solid fa-circle-plus icon4"></i></p><br>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <h3>Get Started</h3>
+        <div id="sugan">
+            <div>
+                <img src="img4.png"><br>
+                <a href="">Sign up for a Free AWS account</a>
+                <p>Creating an AWS account is free and gives you immediate access to the AWS Free Tier</p>
+            </div>
+
+            <div>
+                <img src="img5.png"><br>
+                <a href="">10 minute tutorials</a>
+                <p>Explore and learn with easy to follow tutorials for multiple use cases</p>
+            </div>
+            <div>
+                <img src="img6.png"><br>
+                <a href="">Start building in the console</a>
+                <p>Build your production solution quickly and easily once you're ready</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <h5 class="card-header text-light" style="background-color:#001f3f;">Getting Started resource
+                        center
+                    </h5>
+                    <div class="card-body">
+                        <p class="card-text">Explore hands-on tutorials, getting started guides, and learn about
+                            cloud
+                            essentials. This text needs to be edited</p>
+                    </div>
+                    <div></div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Start Learning>></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <h5 class="card-header text-light" style="background-color:#001f3f;">Developer center</h5>
+                    <div class="card-body">
+                        <p class="card-text">The AWS Developer Center provides developement tools and learning
+                            resources
+                            to
+                            take your developement skills on AWS.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Visit Developer center>></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <h5 class="card-header text-light" style="background-color:#001f3f;">Join the community</h5>
+                    <div class="card-body">
+                        <p class="card-text">Explore hands-on tutorials, getting started guides, and learn about
+                            cloud
+                            essentials. This text needs to be edited</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Learn More>></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6 col-md-6 col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-8 col-lg-8 col-md-8 col-xl-8">
+                                <h5 class="card-title">AWS IQ</h5>
+                                <p class="card-text">Get on-demand help from AWS<br>Certified third-party experts
+                                </p>
+                            </div>
+                            <div class="col-sm-4 col-lg-4 col-md-4 col-xl-4">
+                                <img src="img7.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6 col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-8 col-lg-8 col-md-8 col-xl-8">
+                                <h5 class="card-title">AWS Free Tier</h5>
+                                <p class="card-text">Gain free, hands-on experience with AWS for 12 months</p>
+                            </div>
+                            <div class="col-sm-4 col-lg-4 col-md-4 col-xl-4">
+                                <img src="img8.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-10 col-lg-10 col-md-10 col-xl-10">
+                        <h5 class="card-title">Validate Your Cloud Skills</h5>
+                        <p class="card-text">Grow your career with an AWS certification. Explore the resources
+                            available
+                            to
+                            help<br>you prepare >></p>
+                    </div>
+                    <div class="col-sm-2 col-lg-2 col-md-2 col-xl-2">
+                        <img src="img9.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="foot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-lg-9 col-md-9 col-xl-9 ">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <h5>Learn About AWS<h5>
+                                    </td>
+                                    <td>
+                                        <h5>Rosources for AWS</h5>
+                                    </td>
+                                    <td>
+                                        <h5> Developers on AWS</h5>
+                                    </td>
+                                    <td>
+                                        <h5>Help</h5>
+                                    </td>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>What is AWS?</td>
+                                    <td>Getting Started</td>
+                                    <td>Developer Center</td>
+                                    <td>Contact us</td>
+
+                                </tr>
+                                <tr>
+                                    <td> Whata is Cloud Computing?</td>
+                                    <td>sdks & Tools</td>
+                                    <td>Training and Certification</td>
+                                    <td>Get Expert Help</td>
+                                </tr>
+
+                                <tr>
+                                    <td> AWS Inclusion, Diversity and Equality</td>
+                                    <td>AWS Solutions Library</td>
+                                    <td>.NET on AWS</td>
+                                    <td>File a Support Ticket</td>
+                                </tr>
+                                <tr>
+                                    <td>What is DevOps?</td>
+                                    <td>Architecture Center</td>
+                                    <td>Python ON AWS</td>
+                                    <td>AWS re:Post</td>
+                                </tr>
+                                <tr>
+                                    <td>What is a Container?</td>
+                                    <td>Product and Technical FAQs</td>
+                                    <td>Java on AWS</td>
+                                    <td>Knowledge Center</td>
+                                </tr>
+                                <tr>
+                                    <td>What is a Data Lake?</td>
+                                    <td>Analyst Reports</td>
+                                    <td>PHP on AWS</td>
+                                    <td>AWS support Overview</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        AWS Cloud Security
+                                    </td>
+                                    <td>
+                                        AWS partners
+                                    </td>
+                                    <td>
+                                        JavaScript on AWS
+                                    </td>
+                                    <td>Legal</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        What's New
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>AWS Careers</td>
+                                </tr>
+                                <tr>
+                                    <td>Blogs</td>
+                                </tr>
+                                <tr>
+                                    <td>press Releases</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-md-3 col-xl-3">
+                        <table>
+                            <tr>
+                                <td><button>Create an AWS Account</button></td>
+                            </tr>
+                            <tr>
+                                <td>bugui</td>
+                            </tr>
+                            <tr>
+                                <td>Amazon is an Equal Opportunity<br> Employer: Minority / Women /<br>
+                                    Disability /
+                                    Veteran
+                                    /
+                                    Gender <br>Identity / Sexual Orientation /<br>Age.</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <p>Language عربي Bahasa Indonesia Deutsch English Español Français Italiano Português Tiếng
+                        Việt
+                        Türkçe
+                        Ρусский 日本語 한국어 中文 (简体) 中文 (繁體)</p>
+                </div>
+            </div>
+        </div>
+        <div class="container below-footer">
+            <p>Privacy | Site Terms | Cookie Preferences | © 2023, Amazon Web Services, Inc. or its affiliates.
+                All
+                rights
+                reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
